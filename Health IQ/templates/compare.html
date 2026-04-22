@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Plans - Health IQ</title>
+    <link rel="stylesheet" href="/static/css/compare.css"/>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/static/images/logo.png" alt="Logo"/>
+            <span>Health IQ</span>
+        </div>
+        <div>
+            <a href="/home">Home</a>
+            <a href="/compare">Compare</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Browse Health Insurance Plans</h1>
+        <p class="subtitle">Find the best one for you.</p>
+
+        <form action="/compare" method="GET">
+            <div class="plans-grid"></div>
+        </form>
+    </div>
+</body>
+</html>

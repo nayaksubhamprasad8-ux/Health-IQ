@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-sarif;
+    background: #f5f7fa;
+}
+
+nav {
+    background: #0a2540;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100px;
+    height: 75px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #00a8a8;
+}
+
+.conatiner {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #0a2540;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+table header,
+table data {
+    padding: 13px 15px;
+    border-bottom: 1px solid #f5f7fa;
+    text-align: center;
+    font-size: 14px;
+}
+
+table header {
+    background: #0a2540;
+    color: white;
+}
+
+table head:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: #0a2540;
+    background: white;
+}
+
+table row:last-child table data {
+    border-bottom: none;
+}
+
+table row:hover table data {
+    border-bottom: none;
+}
+
+table row:hover table data:first-child {
+    background: white
+}
+
+.btn-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 11px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #00a8a8;
+    color: white;
+}
+
+.btn-outline {
+    background: white;
+    color: #0a2540;
+    border: 2px solid #0a2540;
+}

@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Plans - Health IQ</title>
+    <link rel="stylesheet" href="/static/css/plans.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/static/images/logo.png" alt="Logo" />
+        <span>Health IQ</span>
+      </div>
+      <div>
+        <a href="/home">Home</a>
+        <a href="/compare">Compare</a>
+        <a href="/logout">Logout</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Browse Health Insurance Plans</h1>
+      <p class="subtitle">
+        60 Indian health insurance plans — find the best one for you.
+      </p>
+
+      <form action="/compare" method="GET">
+        <div class="plans-grid">
+          <!-- STAR -->
+          <div class="plan-card popular">
+            <h3>Individual Basic - Star <span class="badge">Popular</span></h3>
+            <p class="company">Star Health and Allied Insurance</p>
+            <ul>
+              <li>₹1,632/month</li>
+              <li>Coverage: ₹5,00,000</li>
+              <li>Hospitals: 13,013+</li>
+              <li>Claim: 92% | Rating: ⭐4.6</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - Star"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Individual Premium - Star <span class="badge">Popular</span>
+            </h3>
+            <p class="company">Star Health and Allied Insurance</p>
+            <ul>
+              <li>₹3,217/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 8,971+</li>
+              <li>Claim: 90% | Rating: ⭐4.6</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - Star"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Family Floater - Star <span class="badge">Popular</span></h3>
+            <p class="company">Star Health and Allied Insurance</p>
+            <ul>
+              <li>₹2,894/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 8,039+</li>
+              <li>Claim: 98% | Rating: ⭐4.6</li>
+              <li>Waiting: 3 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - Star"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Senior Citizen Plan - Star</h3>
+            <p class="company">Star Health and Allied Insurance</p>
+            <ul>
+              <li>₹3,021/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 8,498+</li>
+              <li>Claim: 94% | Rating: ⭐4.3</li>
+              <li>Waiting: 1 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - Star"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Comprehensive Max - Star <span class="badge">Popular</span></h3>
+            <p class="company">Star Health and Allied Insurance</p>
+            <ul>
+              <li>₹4,987/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 13,749+</li>
+              <li>Claim: 88% | Rating: ⭐4.6</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - Star"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- HDFC -->
+          <div class="plan-card">
+            <h3>Individual Basic - HDFC</h3>
+            <p class="company">HDFC ERGO General Insurance</p>
+            <ul>
+              <li>₹1,443/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 4,935+</li>
+              <li>Claim: 92% | Rating: ⭐4.3</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - HDFC"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Individual Premium - HDFC <span class="badge">Popular</span>
+            </h3>
+            <p class="company">HDFC ERGO General Insurance</p>
+            <ul>
+              <li>₹2,094/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 5,133+</li>
+              <li>Claim: 88% | Rating: ⭐4.5</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - HDFC"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Family Floater - HDFC</h3>
+            <p class="company">HDFC ERGO General Insurance</p>
+            <ul>
+              <li>₹2,290/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 9,490+</li>
+              <li>Claim: 97% | Rating: ⭐4.3</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - HDFC"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Senior Citizen Plan - HDFC</h3>
+            <p class="company">HDFC ERGO General Insurance</p>
+            <ul>
+              <li>₹4,638/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 15,610+</li>
+              <li>Claim: 91% | Rating: ⭐4.2</li>
+              <li>Waiting: 1 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - HDFC"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Comprehensive Max - HDFC <span class="badge">Popular</span></h3>
+            <p class="company">HDFC ERGO General Insurance</p>
+            <ul>
+              <li>₹7,247/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 8,098+</li>
+              <li>Claim: 93% | Rating: ⭐4.8</li>
+              <li>Waiting: 1 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - HDFC"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- ICICI -->
+          <div class="plan-card popular">
+            <h3>Individual Basic - ICICI <span class="badge">Popular</span></h3>
+            <p class="company">ICICI Lombard General Insurance</p>
+            <ul>
+              <li>₹1,043/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 9,585+</li>
+              <li>Claim: 99% | Rating: ⭐4.5</li>
+              <li>Waiting: 3 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - ICICI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Individual Premium - ICICI <span class="badge">Popular</span>
+            </h3>
+            <p class="company">ICICI Lombard General Insurance</p>
+            <ul>
+              <li>₹2,764/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 6,638+</li>
+              <li>Claim: 95% | Rating: ⭐4.7</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - ICICI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Family Floater - ICICI</h3>
+            <p class="company">ICICI Lombard General Insurance</p>
+            <ul>
+              <li>₹2,174/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 8,508+</li>
+              <li>Claim: 88% | Rating: ⭐4.2</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - ICICI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Senior Citizen Plan - ICICI <span class="badge">Popular</span>
+            </h3>
+            <p class="company">ICICI Lombard General Insurance</p>
+            <ul>
+              <li>₹6,445/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 13,192+</li>
+              <li>Claim: 92% | Rating: ⭐4.5</li>
+              <li>Waiting: 3 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - ICICI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Comprehensive Max - ICICI</h3>
+            <p class="company">ICICI Lombard General Insurance</p>
+            <ul>
+              <li>₹7,701/month</li>
+              <li>Coverage: ₹50,00,000</li>
+              <li>Hospitals: 13,366+</li>
+              <li>Claim: 98% | Rating: ⭐4.3</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - ICICI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- CARE -->
+          <div class="plan-card popular">
+            <h3>Individual Basic - Care <span class="badge">Popular</span></h3>
+            <p class="company">Care Health Insurance</p>
+            <ul>
+              <li>₹1,152/month</li>
+              <li>Coverage: ₹5,00,000</li>
+              <li>Hospitals: 11,806+</li>
+              <li>Claim: 94% | Rating: ⭐4.8</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - Care"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Individual Premium - Care</h3>
+            <p class="company">Care Health Insurance</p>
+            <ul>
+              <li>₹3,304/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 13,754+</li>
+              <li>Claim: 89% | Rating: ⭐4.2</li>
+              <li>Waiting: 3 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - Care"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Family Floater - Care <span class="badge">Popular</span></h3>
+            <p class="company">Care Health Insurance</p>
+            <ul>
+              <li>₹4,143/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 7,932+</li>
+              <li>Claim: 94% | Rating: ⭐4.5</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - Care"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Senior Citizen Plan - Care <span class="badge">Popular</span>
+            </h3>
+            <p class="company">Care Health Insurance</p>
+            <ul>
+              <li>₹5,460/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 9,050+</li>
+              <li>Claim: 96% | Rating: ⭐4.5</li>
+              <li>Waiting: 1 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - Care"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Comprehensive Max - Care <span class="badge">Popular</span></h3>
+            <p class="company">Care Health Insurance</p>
+            <ul>
+              <li>₹5,340/month</li>
+              <li>Coverage: ₹50,00,000</li>
+              <li>Hospitals: 5,219+</li>
+              <li>Claim: 99% | Rating: ⭐4.5</li>
+              <li>Waiting: 2 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - Care"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- NIVA -->
+          <div class="plan-card popular">
+            <h3>Individual Basic - Niva <span class="badge">Popular</span></h3>
+            <p class="company">Niva Bupa Health Insurance</p>
+            <ul>
+              <li>₹1,588/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 7,462+</li>
+              <li>Claim: 94% | Rating: ⭐4.6</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - Niva"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Individual Premium - Niva</h3>
+            <p class="company">Niva Bupa Health Insurance</p>
+            <ul>
+              <li>₹2,211/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 5,201+</li>
+              <li>Claim: 99% | Rating: ⭐4.1</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - Niva"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Family Floater - Niva</h3>
+            <p class="company">Niva Bupa Health Insurance</p>
+            <ul>
+              <li>₹4,979/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 12,021+</li>
+              <li>Claim: 99% | Rating: ⭐4.1</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - Niva"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Senior Citizen Plan - Niva <span class="badge">Popular</span>
+            </h3>
+            <p class="company">Niva Bupa Health Insurance</p>
+            <ul>
+              <li>₹2,932/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 9,386+</li>
+              <li>Claim: 90% | Rating: ⭐4.7</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - Niva"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Comprehensive Max - Niva</h3>
+            <p class="company">Niva Bupa Health Insurance</p>
+            <ul>
+              <li>₹6,222/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 15,844+</li>
+              <li>Claim: 99% | Rating: ⭐3.9</li>
+              <li>Waiting: 3 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - Niva"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- ADITYA -->
+          <div class="plan-card popular">
+            <h3>
+              Individual Basic - Aditya <span class="badge">Popular</span>
+            </h3>
+            <p class="company">Aditya Birla Health Insurance</p>
+            <ul>
+              <li>₹1,314/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 14,064+</li>
+              <li>Claim: 89% | Rating: ⭐4.8</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - Aditya"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Individual Premium - Aditya</h3>
+            <p class="company">Aditya Birla Health Insurance</p>
+            <ul>
+              <li>₹2,077/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 10,920+</li>
+              <li>Claim: 94% | Rating: ⭐3.9</li>
+              <li>Waiting: 3 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - Aditya"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Family Floater - Aditya</h3>
+            <p class="company">Aditya Birla Health Insurance</p>
+            <ul>
+              <li>₹3,184/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 12,274+</li>
+              <li>Claim: 91% | Rating: ⭐4.3</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - Aditya"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Senior Citizen Plan - Aditya <span class="badge">Popular</span>
+            </h3>
+            <p class="company">Aditya Birla Health Insurance</p>
+            <ul>
+              <li>₹3,525/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 15,492+</li>
+              <li>Claim: 95% | Rating: ⭐4.6</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - Aditya"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Comprehensive Max - Aditya</h3>
+            <p class="company">Aditya Birla Health Insurance</p>
+            <ul>
+              <li>₹6,109/month</li>
+              <li>Coverage: ₹50,00,000</li>
+              <li>Hospitals: 13,116+</li>
+              <li>Claim: 95% | Rating: ⭐4.1</li>
+              <li>Waiting: 3 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - Aditya"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- TATA -->
+          <div class="plan-card">
+            <h3>Individual Basic - Tata</h3>
+            <p class="company">Tata AIG General Insurance</p>
+            <ul>
+              <li>₹1,284/month</li>
+              <li>Coverage: ₹5,00,000</li>
+              <li>Hospitals: 7,533+</li>
+              <li>Claim: 97% | Rating: ⭐4.4</li>
+              <li>Waiting: 2 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - Tata"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Individual Premium - Tata</h3>
+            <p class="company">Tata AIG General Insurance</p>
+            <ul>
+              <li>₹3,198/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 6,650+</li>
+              <li>Claim: 94% | Rating: ⭐4.0</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - Tata"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Family Floater - Tata <span class="badge">Popular</span></h3>
+            <p class="company">Tata AIG General Insurance</p>
+            <ul>
+              <li>₹2,431/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 14,552+</li>
+              <li>Claim: 88% | Rating: ⭐4.6</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - Tata"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Senior Citizen Plan - Tata</h3>
+            <p class="company">Tata AIG General Insurance</p>
+            <ul>
+              <li>₹5,507/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 11,290+</li>
+              <li>Claim: 89% | Rating: ⭐4.3</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - Tata"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Comprehensive Max - Tata</h3>
+            <p class="company">Tata AIG General Insurance</p>
+            <ul>
+              <li>₹6,223/month</li>
+              <li>Coverage: ₹50,00,000</li>
+              <li>Hospitals: 7,537+</li>
+              <li>Claim: 90% | Rating: ⭐4.2</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - Tata"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- BAJAJ -->
+          <div class="plan-card">
+            <h3>Individual Basic - Bajaj</h3>
+            <p class="company">Bajaj Allianz General Insurance</p>
+            <ul>
+              <li>₹1,657/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 10,710+</li>
+              <li>Claim: 98% | Rating: ⭐4.0</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - Bajaj"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Individual Premium - Bajaj</h3>
+            <p class="company">Bajaj Allianz General Insurance</p>
+            <ul>
+              <li>₹2,938/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 6,603+</li>
+              <li>Claim: 91% | Rating: ⭐4.0</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - Bajaj"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Family Floater - Bajaj <span class="badge">Popular</span></h3>
+            <p class="company">Bajaj Allianz General Insurance</p>
+            <ul>
+              <li>₹2,796/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 9,367+</li>
+              <li>Claim: 98% | Rating: ⭐4.6</li>
+              <li>Waiting: 3 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - Bajaj"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Senior Citizen Plan - Bajaj <span class="badge">Popular</span>
+            </h3>
+            <p class="company">Bajaj Allianz General Insurance</p>
+            <ul>
+              <li>₹3,793/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 10,419+</li>
+              <li>Claim: 97% | Rating: ⭐4.7</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - Bajaj"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Comprehensive Max - Bajaj</h3>
+            <p class="company">Bajaj Allianz General Insurance</p>
+            <ul>
+              <li>₹4,666/month</li>
+              <li>Coverage: ₹50,00,000</li>
+              <li>Hospitals: 8,556+</li>
+              <li>Claim: 99% | Rating: ⭐3.9</li>
+              <li>Waiting: 3 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - Bajaj"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- SBI -->
+          <div class="plan-card popular">
+            <h3>Individual Basic - SBI <span class="badge">Popular</span></h3>
+            <p class="company">SBI General Insurance</p>
+            <ul>
+              <li>₹1,081/month</li>
+              <li>Coverage: ₹5,00,000</li>
+              <li>Hospitals: 15,521+</li>
+              <li>Claim: 99% | Rating: ⭐4.5</li>
+              <li>Waiting: 3 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - SBI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Individual Premium - SBI <span class="badge">Popular</span></h3>
+            <p class="company">SBI General Insurance</p>
+            <ul>
+              <li>₹3,105/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 6,541+</li>
+              <li>Claim: 90% | Rating: ⭐4.6</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - SBI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>Family Floater - SBI <span class="badge">Popular</span></h3>
+            <p class="company">SBI General Insurance</p>
+            <ul>
+              <li>₹2,433/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 12,400+</li>
+              <li>Claim: 90% | Rating: ⭐4.8</li>
+              <li>Waiting: 1 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - SBI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Senior Citizen Plan - SBI</h3>
+            <p class="company">SBI General Insurance</p>
+            <ul>
+              <li>₹4,290/month</li>
+              <li>Coverage: ₹5,00,000</li>
+              <li>Hospitals: 11,605+</li>
+              <li>Claim: 89% | Rating: ⭐4.2</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - SBI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Comprehensive Max - SBI</h3>
+            <p class="company">SBI General Insurance</p>
+            <ul>
+              <li>₹7,230/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 15,580+</li>
+              <li>Claim: 89% | Rating: ⭐4.4</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - SBI"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- MANIPALCIGNA -->
+          <div class="plan-card popular">
+            <h3>
+              Individual Basic - ManipalCigna <span class="badge">Popular</span>
+            </h3>
+            <p class="company">ManipalCigna Health Insurance</p>
+            <ul>
+              <li>₹1,105/month</li>
+              <li>Coverage: ₹5,00,000</li>
+              <li>Hospitals: 8,356+</li>
+              <li>Claim: 96% | Rating: ⭐4.6</li>
+              <li>Waiting: 1 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - ManipalCigna"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Individual Premium - ManipalCigna
+              <span class="badge">Popular</span>
+            </h3>
+            <p class="company">ManipalCigna Health Insurance</p>
+            <ul>
+              <li>₹2,731/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 8,728+</li>
+              <li>Claim: 91% | Rating: ⭐4.6</li>
+              <li>Waiting: 1 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - ManipalCigna"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Family Floater - ManipalCigna</h3>
+            <p class="company">ManipalCigna Health Insurance</p>
+            <ul>
+              <li>₹4,101/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 7,268+</li>
+              <li>Claim: 93% | Rating: ⭐4.3</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - ManipalCigna"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Senior Citizen Plan - ManipalCigna</h3>
+            <p class="company">ManipalCigna Health Insurance</p>
+            <ul>
+              <li>₹4,854/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 8,254+</li>
+              <li>Claim: 96% | Rating: ⭐4.1</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - ManipalCigna"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Comprehensive Max - ManipalCigna</h3>
+            <p class="company">ManipalCigna Health Insurance</p>
+            <ul>
+              <li>₹3,752/month</li>
+              <li>Coverage: ₹50,00,000</li>
+              <li>Hospitals: 5,856+</li>
+              <li>Claim: 89% | Rating: ⭐4.0</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - ManipalCigna"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- NATIONAL -->
+          <div class="plan-card popular">
+            <h3>
+              Individual Basic - National <span class="badge">Popular</span>
+            </h3>
+            <p class="company">National Insurance Company</p>
+            <ul>
+              <li>₹1,122/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 10,153+</li>
+              <li>Claim: 90% | Rating: ⭐4.5</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - National"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Individual Premium - National <span class="badge">Popular</span>
+            </h3>
+            <p class="company">National Insurance Company</p>
+            <ul>
+              <li>₹1,750/month</li>
+              <li>Coverage: ₹15,00,000</li>
+              <li>Hospitals: 10,259+</li>
+              <li>Claim: 89% | Rating: ⭐4.6</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - National"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Family Floater - National</h3>
+            <p class="company">National Insurance Company</p>
+            <ul>
+              <li>₹3,043/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 12,968+</li>
+              <li>Claim: 90% | Rating: ⭐4.3</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - National"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Senior Citizen Plan - National</h3>
+            <p class="company">National Insurance Company</p>
+            <ul>
+              <li>₹5,738/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 6,469+</li>
+              <li>Claim: 99% | Rating: ⭐4.1</li>
+              <li>Waiting: 2 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - National"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Comprehensive Max - National</h3>
+            <p class="company">National Insurance Company</p>
+            <ul>
+              <li>₹5,802/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 10,431+</li>
+              <li>Claim: 95% | Rating: ⭐4.1</li>
+              <li>Waiting: 0 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - National"
+              />
+              Compare</label
+            >
+          </div>
+
+          <!-- ORIENTAL -->
+          <div class="plan-card popular">
+            <h3>
+              Individual Basic - Oriental <span class="badge">Popular</span>
+            </h3>
+            <p class="company">Oriental Insurance Company</p>
+            <ul>
+              <li>₹1,233/month</li>
+              <li>Coverage: ₹5,00,000</li>
+              <li>Hospitals: 9,893+</li>
+              <li>Claim: 90% | Rating: ⭐4.7</li>
+              <li>Waiting: 2 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Basic - Oriental"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Individual Premium - Oriental</h3>
+            <p class="company">Oriental Insurance Company</p>
+            <ul>
+              <li>₹2,697/month</li>
+              <li>Coverage: ₹20,00,000</li>
+              <li>Hospitals: 5,798+</li>
+              <li>Claim: 96% | Rating: ⭐4.1</li>
+              <li>Waiting: 0 year(s) | ✅ Wellness</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Individual Premium - Oriental"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Family Floater - Oriental</h3>
+            <p class="company">Oriental Insurance Company</p>
+            <ul>
+              <li>₹4,592/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 14,881+</li>
+              <li>Claim: 94% | Rating: ⭐4.3</li>
+              <li>Waiting: 1 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Family Floater - Oriental"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card">
+            <h3>Senior Citizen Plan - Oriental</h3>
+            <p class="company">Oriental Insurance Company</p>
+            <ul>
+              <li>₹3,049/month</li>
+              <li>Coverage: ₹10,00,000</li>
+              <li>Hospitals: 6,579+</li>
+              <li>Claim: 88% | Rating: ⭐4.2</li>
+              <li>Waiting: 3 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Senior Citizen Plan - Oriental"
+              />
+              Compare</label
+            >
+          </div>
+
+          <div class="plan-card popular">
+            <h3>
+              Comprehensive Max - Oriental <span class="badge">Popular</span>
+            </h3>
+            <p class="company">Oriental Insurance Company</p>
+            <ul>
+              <li>₹7,037/month</li>
+              <li>Coverage: ₹30,00,000</li>
+              <li>Hospitals: 12,958+</li>
+              <li>Claim: 96% | Rating: ⭐4.6</li>
+              <li>Waiting: 3 year(s)</li>
+            </ul>
+            <label class="compare-label"
+              ><input
+                type="checkbox"
+                name="plans"
+                value="Comprehensive Max - Oriental"
+              />
+              Compare</label
+            >
+          </div>
+        </div>
+
+        <button type="submit" class="compare-btn">
+          Compare Selected Plans →
+        </button>
+        <p class="note">Tick 2 or 3 plans then click the button above.</p>
+      </form>
+    </div>
+  </body>
+</html>
