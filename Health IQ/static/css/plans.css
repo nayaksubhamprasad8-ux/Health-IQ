@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+nav {
+  background: #0a2540;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 100px;
+  height: 75px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #00a8a8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #0a2540;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 15px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.plan-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #00a8a8;
+}
+
+.plan-card.popular {
+  border-top-color: #2ecc71;
+}
+
+.plan-card h3 {
+  margin: 0 0 4px 0;
+  color: #0a2540;
+  font-size: 15px;
+}
+
+.company {
+  font-size: 13px;
+  color: #00a8a8;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  background: #2ecc71;
+  color: white;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 20px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.plan-card ul {
+  margin: 10px 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: #444;
+}
+
+.plan-card ul li {
+  margin-bottom: 4px;
+}
+
+.compare-label {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.compare-btn {
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  padding: 13px;
+  background: #0a2540;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+
+.compare-btn:hover {
+  background: #0d3352;
+}
+
+.note {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
+}

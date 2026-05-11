@@ -1,0 +1,61 @@
+Company,Plan_Name,Plan_Type,Annual_Premium,Monthly_Premium,Coverage_Limit,Waiting_Period_Years,Claim_Settlement_Ratio_Percent,Network_Hospitals,Rating,Reviews_Count,Wellness_Benefit,Review_Text
+Star Health and Allied Insurance,Individual Basic - Star,Individual,19585,1632.08,500000,2,92,13013,4.6,1952,No,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Individual Premium - Star,Individual,38610,3217.5,1500000,0,90,8971,4.6,20854,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Family Floater - Star,Family,34734,2894.5,1000000,3,98,8039,4.6,8573,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Senior Citizen Plan - Star,Senior,36254,3021.17,1000000,1,94,8498,4.3,21117,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Comprehensive Max - Star,Individual,59846,4987.17,3000000,1,88,13749,4.6,11986,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,Individual Basic - HDFC,Individual,17324,1443.67,1000000,1,92,4935,4.3,2891,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,Individual Premium - HDFC,Individual,25131,2094.25,1500000,1,88,5133,4.5,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,Family Floater - HDFC,Family,27480,2290.0,3000000,0,97,9490,4.3,24124,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,Senior Citizen Plan - HDFC,Senior,55661,4638.42,1000000,1,91,15610,4.2,6371,No,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,Comprehensive Max - HDFC,Individual,86974,7247.83,2000000,1,93,8098,4.8,11899,No,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,Individual Basic - ICICI,Individual,12527,1043.92,1000000,3,99,9585,4.5,7395,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,Individual Premium - ICICI,Individual,33176,2764.67,1500000,0,95,6638,4.7,1056,Yes,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,Family Floater - ICICI,Family,26091,2174.25,3000000,0,88,8508,4.2,15200,Yes,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,Senior Citizen Plan - ICICI,Senior,77343,6445.25,1000000,3,92,13192,4.5,23564,Yes,Comprehensive coverage with wellness rewards included.
+ICICI Lombard General Insurance,Comprehensive Max - ICICI,Individual,92422,7701.83,5000000,2,98,13366,4.3,8443,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Individual Basic - Care,Individual,13835,1152.92,500000,2,94,11806,4.8,10214,No,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Individual Premium - Care,Individual,39650,3304.17,1500000,3,89,13754,4.2,16893,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Family Floater - Care,Family,49725,4143.75,2000000,0,94,7932,4.5,11522,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Senior Citizen Plan - Care,Senior,65523,5460.25,1500000,1,96,9050,4.5,19485,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Comprehensive Max - Care,Individual,64080,5340.0,5000000,2,99,5219,4.5,15825,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Individual Basic - Niva,Individual,19063,1588.58,1000000,0,94,7462,4.6,23173,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Individual Premium - Niva,Individual,26536,2211.33,2000000,0,99,5201,4.1,23881,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Family Floater - Niva,Family,59755,4979.58,3000000,1,99,12021,4.1,8367,Yes,Quick claim approval and responsive customer support.
+Niva Bupa Health Insurance,Senior Citizen Plan - Niva,Senior,35186,2932.17,1500000,2,90,9386,4.7,24701,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Comprehensive Max - Niva,Individual,74674,6222.83,3000000,3,99,15844,3.9,23552,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Individual Basic - Aditya,Individual,15770,1314.17,1000000,2,89,14064,4.8,24740,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Individual Premium - Aditya,Individual,24927,2077.25,2000000,3,94,10920,3.9,18553,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Family Floater - Aditya,Family,38219,3184.92,3000000,0,91,12274,4.3,3386,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Senior Citizen Plan - Aditya,Senior,42307,3525.58,1500000,0,95,15492,4.6,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Comprehensive Max - Aditya,Individual,73310,6109.17,5000000,3,95,13116,4.1,17961,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Individual Basic - Tata,Individual,15418,1284.83,500000,2,97,7533,4.4,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Individual Premium - Tata,Individual,38380,3198.33,1500000,2,94,6650,4.0,5842,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Family Floater - Tata,Family,29178,2431.5,2000000,1,88,14552,4.6,1736,Yes,Comprehensive coverage with wellness rewards included.
+Tata AIG General Insurance,Senior Citizen Plan - Tata,Senior,66090,5507.5,1500000,0,89,11290,4.3,9504,Yes,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Comprehensive Max - Tata,Individual,74678,6223.17,5000000,1,90,7537,4.2,2303,Yes,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Individual Basic - Bajaj,Individual,19894,1657.83,1000000,1,98,10710,4.0,12378,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Individual Premium - Bajaj,Individual,35256,2938.0,1500000,1,91,6603,4.0,11636,Yes,Comprehensive coverage with wellness rewards included.
+Bajaj Allianz General Insurance,Family Floater - Bajaj,Family,33562,2796.83,2000000,3,98,9367,4.6,17237,Yes,Comprehensive coverage with wellness rewards included.
+Bajaj Allianz General Insurance,Senior Citizen Plan - Bajaj,Senior,45522,3793.5,1000000,0,97,10419,4.7,9371,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Comprehensive Max - Bajaj,Individual,56003,4666.92,5000000,3,99,8556,3.9,18645,No,Comprehensive coverage with wellness rewards included.
+SBI General Insurance,Individual Basic - SBI,Individual,12973,1081.08,500000,3,99,15521,4.5,3951,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,Individual Premium - SBI,Individual,37265,3105.42,2000000,0,90,6541,4.6,23269,Yes,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,Family Floater - SBI,Family,29199,2433.25,3000000,1,90,12400,4.8,3830,No,Comprehensive coverage with wellness rewards included.
+SBI General Insurance,Senior Citizen Plan - SBI,Senior,51490,4290.83,500000,0,89,11605,4.2,17122,No,Quick claim approval and responsive customer support.
+SBI General Insurance,Comprehensive Max - SBI,Individual,86768,7230.67,3000000,2,89,15580,4.4,23931,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,Individual Basic - ManipalCigna,Individual,13267,1105.58,500000,1,96,8356,4.6,15039,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,Individual Premium - ManipalCigna,Individual,32781,2731.75,1500000,1,91,8728,4.6,19128,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,Family Floater - ManipalCigna,Family,49223,4101.92,1000000,2,93,7268,4.3,21232,No,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,Senior Citizen Plan - ManipalCigna,Senior,58251,4854.25,1000000,0,96,8254,4.1,14114,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,Comprehensive Max - ManipalCigna,Individual,45025,3752.08,5000000,0,89,5856,4.0,15313,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,Individual Basic - National,Individual,13474,1122.83,1000000,0,90,10153,4.5,12444,Yes,Smooth cashless claim process and good hospital network.
+National Insurance Company,Individual Premium - National,Individual,21003,1750.25,1500000,0,89,10259,4.6,24558,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,Family Floater - National,Family,36517,3043.08,2000000,0,90,12968,4.3,12267,No,Quick claim approval and responsive customer support.
+National Insurance Company,Senior Citizen Plan - National,Senior,68859,5738.25,1000000,2,99,6469,4.1,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,Comprehensive Max - National,Individual,69624,5802.0,3000000,0,95,10431,4.1,23398,No,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Individual Basic - Oriental,Individual,14801,1233.42,500000,2,90,9893,4.7,1499,No,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Individual Premium - Oriental,Individual,32366,2697.17,2000000,0,96,5798,4.1,1546,Yes,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Family Floater - Oriental,Family,55104,4592.0,1000000,1,94,14881,4.3,13215,No,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Senior Citizen Plan - Oriental,Senior,36599,3049.92,1000000,3,88,6579,4.2,17453,No,Quick claim approval and responsive customer support.
+Oriental Insurance Company,Comprehensive Max - Oriental,Individual,84451,7037.58,3000000,3,96,12958,4.6,14237,No,Smooth cashless claim process and good hospital network.

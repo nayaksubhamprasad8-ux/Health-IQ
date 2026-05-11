@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+}
+
+nav {
+    background: #0a2540;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100px;
+    height: 75px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2ecc71;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0a2540;
+    margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    margin: 30px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.comparison-table thead {
+    background: linear-gradient(135deg, #0a2540, #1a4d6d);
+}
+
+.comparison-table th {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.comparison-table th:last-child {
+    border-right: none;
+}
+
+.comparison-table th:first-child {
+    text-align: left;
+    background: #0a2540;
+    min-width: 180px;
+}
+
+.comparison-table td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    font-size: 14px;
+    text-align: center;
+}
+
+.comparison-table td:last-child {
+    border-right: none;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tbody tr:hover {
+    background: #f5f9fc;
+}
+
+.attr-name {
+    font-weight: 700;
+    color: #0a2540;
+    text-align: left;
+    background: #f0f4f8;
+    min-width: 180px;
+}
+
+.plan-column {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.no-plans {
+    text-align: center;
+    padding: 80px 20px;
+    color: #888;
+    font-size: 18px;
+    background: white;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.no-plans p {
+    margin: 10px 0;
+}
+
+.no-plans a {
+    color: #00a8a8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.no-plans a:hover {
+    color: #008f8f;
+    text-decoration: underline;
+}
+
+.error-box {
+    background: linear-gradient(135deg, #ffe6e6, #ffcccc);
+    color: #c41e3a;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-left: 5px solid #c41e3a;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 2px 8px rgba(196,30,58,0.15);
+}
+
+.btn-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.btn {
+    padding: 13px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #00a8a8;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,168,168,0.3);
+}
+
+.btn-primary:hover {
+    background: #008f8f;
+    box-shadow: 0 6px 16px rgba(0,168,168,0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: white;
+    color: #0a2540;
+    border: 2px solid #0a2540;
+}
+
+.btn-outline:hover {
+    background: #0a2540;
+    color: white;
+    box-shadow: 0 4px 12px rgba(10,37,64,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .comparison-table {
+        font-size: 12px;
+        overflow-x: auto;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
