@@ -19,11 +19,9 @@ def save_users(users):
         json.dump(users, f)
 
 def load_plans():
-    try:
-        with open(os.path.join(BASE_DIR, "Health_IQ_Pure_Health_Plans_Detailed.csv")) as f:
-            return list(csv.DictReader(f))
-    except:
-        return []
+    # ✅ Make sure this filename matches your actual CSV file exactly
+    with open(os.path.join(BASE_DIR, "Health_IQ_Pure_Health_Plans_Detailed.csv")) as f:
+        return list(csv.DictReader(f))
 
 @app.route("/")
 def index():
@@ -72,8 +70,7 @@ def home():
 def plans():
     if "user" not in session:
         return redirect(url_for("login"))
-    plans_list = load_plans()
-    return render_template("plans.html", plans=plans_list)
+    return render_template("plans.html", plans=load_plans())
 
 @app.route("/compare")
 def compare():
