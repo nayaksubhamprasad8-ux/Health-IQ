@@ -20,7 +20,7 @@ def save_users(users):
 
 def load_plans():
     try:
-        with open(os.path.join(BASE_DIR, "Data", "Health_IQ_60_Pure_Health_Plans_Detailed.csv")) as f:
+        with open(os.path.join(BASE_DIR, "Health_IQ_Pure_Health_Plans_Detailed.csv")) as f:
             return list(csv.DictReader(f))
     except:
         return []
@@ -87,5 +87,7 @@ def compare():
         error = "Please select 2 or 3 plans to compare."
     return render_template("compare.html", selected=selected, error=error)
 
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
