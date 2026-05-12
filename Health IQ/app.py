@@ -19,13 +19,13 @@ def save_users(users):
         json.dump(users, f)
 
 def load_plans():
-    # ✅ Make sure this filename matches your actual CSV file exactly
-    with open(os.path.join(BASE_DIR, "Health_IQ_Pure_Health_Plans_Detailed.csv")) as f:
+    # ✅ CSV file is in the Data subfolder
+    with open(os.path.join(BASE_DIR, "Data", "Health_IQ_Pure_Health_Plans_Detailed.csv")) as f:
         return list(csv.DictReader(f))
 
 @app.route("/")
 def index():
-    return redirect(url_for("home" if "user" in session else "login"))
+    return redirect(url_for("login" if "user" not in session else "home"))
 
 @app.route("/login")
 def login():
