@@ -25,7 +25,11 @@ def load_plans():
 
 @app.route("/")
 def index():
-    return redirect(url_for("login" if "user" not in session else "home"))
+    # Direct redirect - check if user is logged in
+    if "user" in session:
+        return redirect(url_for("home"))
+    else:
+        return redirect(url_for("login"))
 
 @app.route("/login")
 def login():
