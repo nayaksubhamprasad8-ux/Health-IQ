@@ -190,7 +190,6 @@ def home():
 def plans():
 
     if "user" not in session:
-
         return redirect(url_for("login"))
 
     plans_list = load_plans()
@@ -207,18 +206,15 @@ def plans():
 @app.route("/compare")
 def compare():
 
-    # Check login
     if "user" not in session:
-
         return redirect(url_for("login"))
 
-    # Get selected plans from checkbox
-    selected_names = request.args.getlist("plans")
+    selected_indexes = request.args.getlist("plans")
 
-    print("Selected Names:", selected_names)
+    print("Selected Indexes:", selected_indexes)
 
-    # Validate
-    if len(selected_names) < 2 or len(selected_names) > 3:
+    # Validation
+    if len(selected_indexes) < 2 or len(selected_indexes) > 3:
 
         return render_template(
             "compare.html",
@@ -226,28 +222,31 @@ def compare():
             error="Please select 2 or 3 plans to compare."
         )
 
-    # Load all plans
     all_plans = load_plans()
 
     selected = []
 
-    # Match plans
-    for plan in all_plans:
+    try:
 
-        csv_name = plan.get("Plan_Name", "").strip()
+        for idx in selected_indexes:
 
-        if csv_name in selected_names:
+            selected.append(all_plans[int(idx)])
 
-            selected.append(plan)
+    except Exception as e:
 
-    print("Matched Plans:", len(selected))
+        print("Compare Error:", e)
+
+        return render_template(
+            "compare.html",
+            selected=[],
+            error="Error comparing plans."
+        )
 
     return render_template(
         "compare.html",
         selected=selected,
         error=None
     )
-
 
 # =====================================================
 # RUN APP
