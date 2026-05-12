@@ -9,57 +9,89 @@ app.secret_key = "healthiq_secret"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-# =========================
-# LOAD & SAVE USERS
-# =========================
+# =====================================================
+# LOAD USERS
+# =====================================================
 def load_users():
+
     try:
-        with open(os.path.join(BASE_DIR, "users.json"), "r") as f:
+        with open(
+            os.path.join(BASE_DIR, "users.json"),
+            "r",
+            encoding="utf-8"
+        ) as f:
+
             return json.load(f)
-    except:
+
+    except Exception as e:
+
+        print("Error loading users:", e)
         return []
 
 
+# =====================================================
+# SAVE USERS
+# =====================================================
 def save_users(users):
-    with open(os.path.join(BASE_DIR, "users.json"), "w") as f:
+
+    with open(
+        os.path.join(BASE_DIR, "users.json"),
+        "w",
+        encoding="utf-8"
+    ) as f:
+
         json.dump(users, f, indent=4)
 
 
-# =========================
-# LOAD HEALTH PLANS CSV
-# =========================
+# =====================================================
+# LOAD PLANS CSV
+# =====================================================
 def load_plans():
+
     try:
         with open(
-            os.path.join(BASE_DIR, "Health_IQ_Pure_Health_Plans_Detailed.csv"),
+            os.path.join(
+                BASE_DIR,
+                "Health_IQ_Pure_Health_Plans_Detailed.csv"
+            ),
             "r",
-            encoding="utf-8",
+            encoding="utf-8"
         ) as f:
-            return list(csv.DictReader(f))
-    except:
+
+            plans = list(csv.DictReader(f))
+
+            print("Loaded plans:", len(plans))
+
+            return plans
+
+    except Exception as e:
+
+        print("Error loading plans:", e)
         return []
 
 
-# =========================
-# ROOT ROUTE
-# Always open login page first
-# =========================
+# =====================================================
+# ROOT
+# =====================================================
 @app.route("/")
 def index():
+
+    # Always open login page first
     return redirect(url_for("login"))
 
 
-# =========================
+# =====================================================
 # LOGIN PAGE
-# =========================
+# =====================================================
 @app.route("/login")
 def login():
+
     return render_template("login.html")
 
 
-# =========================
+# =====================================================
 # SIGN IN
-# =========================
+# =====================================================
 @app.route("/signin", methods=["POST"])
 def signin():
 
@@ -70,9 +102,11 @@ def signin():
 
     for user in users:
 
-        if user["email"] == email and user["password"] == password:
+        if (
+            user["email"] == email and
+            user["password"] == password
+        ):
 
-            # Store session
             session["user"] = user["name"]
             session["email"] = user["email"]
 
@@ -84,9 +118,9 @@ def signin():
     )
 
 
-# =========================
+# =====================================================
 # SIGN UP
-# =========================
+# =====================================================
 @app.route("/signup", methods=["POST"])
 def signup():
 
@@ -104,7 +138,7 @@ def signup():
             error="Email already exists"
         )
 
-    # Create new user
+    # Add new user
     new_user = {
         "name": name,
         "email": email,
@@ -122,9 +156,9 @@ def signup():
     return redirect(url_for("home"))
 
 
-# =========================
+# =====================================================
 # LOGOUT
-# =========================
+# =====================================================
 @app.route("/logout")
 def logout():
 
@@ -133,13 +167,14 @@ def logout():
     return redirect(url_for("login"))
 
 
-# =========================
+# =====================================================
 # HOME PAGE
-# =========================
+# =====================================================
 @app.route("/home")
 def home():
 
     if "user" not in session:
+
         return redirect(url_for("login"))
 
     return render_template(
@@ -148,13 +183,14 @@ def home():
     )
 
 
-# =========================
+# =====================================================
 # PLANS PAGE
-# =========================
+# =====================================================
 @app.route("/plans")
 def plans():
 
     if "user" not in session:
+
         return redirect(url_for("login"))
 
     plans_list = load_plans()
@@ -165,43 +201,57 @@ def plans():
     )
 
 
-# =========================
+# =====================================================
 # COMPARE PAGE
-# =========================
+# =====================================================
 @app.route("/compare")
 def compare():
 
+    # Check login
     if "user" not in session:
+
         return redirect(url_for("login"))
 
+    # Get selected plans from checkbox
     selected_names = request.args.getlist("plans")
 
+    print("Selected Names:", selected_names)
+
+    # Validate
+    if len(selected_names) < 2 or len(selected_names) > 3:
+
+        return render_template(
+            "compare.html",
+            selected=[],
+            error="Please select 2 or 3 plans to compare."
+        )
+
+    # Load all plans
     all_plans = load_plans()
 
-    selected = [
-        p for p in all_plans
-        if p["Plan_Name"] in selected_names
-    ]
+    selected = []
 
-    error = None
+    # Match plans
+    for plan in all_plans:
 
-    # Validation
-    if selected_names:
+        csv_name = plan.get("Plan_Name", "").strip()
 
-        if len(selected_names) < 2 or len(selected_names) > 3:
+        if csv_name in selected_names:
 
-            error = "Please select 2 or 3 plans to compare."
+            selected.append(plan)
+
+    print("Matched Plans:", len(selected))
 
     return render_template(
         "compare.html",
         selected=selected,
-        error=error
+        error=None
     )
 
 
-# =========================
+# =====================================================
 # RUN APP
-# =========================
+# =====================================================
 if __name__ == "__main__":
 
     port = int(os.environ.get("PORT", 5000))
