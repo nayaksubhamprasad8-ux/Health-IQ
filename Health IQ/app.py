@@ -207,13 +207,14 @@ def plans():
 def compare():
 
     if "user" not in session:
+
         return redirect(url_for("login"))
 
     selected_indexes = request.args.getlist("plans")
 
     print("Selected Indexes:", selected_indexes)
 
-    # Validation
+    # Validate selection count
     if len(selected_indexes) < 2 or len(selected_indexes) > 3:
 
         return render_template(
