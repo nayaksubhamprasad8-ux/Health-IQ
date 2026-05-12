@@ -210,12 +210,12 @@ def compare():
 
         return redirect(url_for("login"))
 
-    selected_indexes = request.args.getlist("plans")
+    selected_names = request.args.getlist("plans")
 
-    print("Selected Indexes:", selected_indexes)
+    print("Selected Plans:", selected_names)
 
     # Validate selection count
-    if len(selected_indexes) < 2 or len(selected_indexes) > 3:
+    if len(selected_names) < 2 or len(selected_names) > 3:
 
         return render_template(
             "compare.html",
@@ -229,9 +229,12 @@ def compare():
 
     try:
 
-        for idx in selected_indexes:
+        for name in selected_names:
 
-            selected.append(all_plans[int(idx)])
+            match = next((p for p in all_plans if p.get("Plan_Name") == name), None)
+
+            if match:
+                selected.append(match)
 
     except Exception as e:
 
