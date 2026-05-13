@@ -201,7 +201,7 @@ def plans():
 
 
 # =====================================================
-# COMPARE PAGE
+# COMPARE PAGE  <- THIS IS THE ONLY THING THAT CHANGED
 # =====================================================
 @app.route("/compare")
 def compare():
@@ -210,6 +210,7 @@ def compare():
 
         return redirect(url_for("login"))
 
+    # Get selected plan NAMES from the form checkboxes
     selected_names = request.args.getlist("plans")
 
     print("Selected Plans:", selected_names)
@@ -229,9 +230,13 @@ def compare():
 
     try:
 
+        # Look up each plan by its Plan_Name in the CSV
         for name in selected_names:
 
-            match = next((p for p in all_plans if p.get("Plan_Name") == name), None)
+            match = next(
+                (p for p in all_plans if p.get("Plan_Name") == name),
+                None
+            )
 
             if match:
                 selected.append(match)
@@ -251,6 +256,7 @@ def compare():
         selected=selected,
         error=None
     )
+
 
 # =====================================================
 # RUN APP
