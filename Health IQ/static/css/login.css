@@ -1,176 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0a2540, #00a8a8);
     min-height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0a2540;
-    overflow: hidden;
-    position: relative;
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(0,168,168,0.35) 0%, transparent 70%);
-    top: -150px; right: -100px;
-    border-radius: 50%;
-    animation: floatBlob 8s ease-in-out infinite;
-}
-
-body::after {
-    content: '';
-    position: absolute;
-    width: 500px; height: 500px;
-    background: radial-gradient(circle, rgba(46,204,113,0.2) 0%, transparent 70%);
-    bottom: -100px; left: -80px;
-    border-radius: 50%;
-    animation: floatBlob 10s ease-in-out infinite reverse;
-}
-
-@keyframes floatBlob {
-    0%, 100% { transform: translate(0,0) scale(1); }
-    50%       { transform: translate(20px,-30px) scale(1.05); }
-}
-
-.auth-wrapper {
-    position: relative;
-    z-index: 10;
-    width: 420px;
-    animation: slideUp 0.5s ease forwards;
-}
-
-@keyframes slideUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 24px;
-}
-
-.brand-icon {
-    width: 40px; height: 40px;
-    background: linear-gradient(135deg, #00a8a8, #2ecc71);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px;
-    box-shadow: 0 4px 15px rgba(0,168,168,0.4);
-}
-
-.brand-name {
-    font-size: 22px; font-weight: 700;
-    color: white; letter-spacing: 0.5px;
-}
-
-/* Both boxes share this style */
-.signin-box, .signup-box {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255,255,255,0.12);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
 }
 
 /* Default: show signin, hide signup */
 .signin-box { display: block; }
 .signup-box { display: none; }
 
-/* When checkbox is checked: hide signin, show signup */
+/* When checkbox checked: swap */
 #toggle:checked ~ .signin-box { display: none; }
 #toggle:checked ~ .signup-box { display: block; }
 
-h2 {
-    font-size: 26px; font-weight: 700;
-    color: white; text-align: center;
-    margin-bottom: 6px;
-}
-
-.subtitle-text {
-    text-align: center;
-    color: rgba(255,255,255,0.5);
-    font-size: 14px; margin-bottom: 28px;
-}
-
-.error-msg {
-    background: rgba(220,53,69,0.15);
-    border: 1px solid rgba(220,53,69,0.4);
-    color: #ff6b7a;
-    padding: 10px 14px; border-radius: 10px;
-    font-size: 13px; text-align: center; margin-bottom: 16px;
-}
-
-.input-group {
-    position: relative;
-    margin-bottom: 14px;
-}
-
-.input-group .icon {
-    position: absolute; left: 14px; top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px; opacity: 0.5; pointer-events: none;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"] {
-    width: 100%;
-    padding: 13px 14px 13px 40px;
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.12);
+.box {
+    background: white;
+    padding: 40px;
     border-radius: 12px;
-    font-size: 14px; font-family: 'Outfit', sans-serif;
-    color: white; transition: all 0.2s ease; outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 360px;
 }
 
-input[type="email"]::placeholder,
-input[type="password"]::placeholder,
-input[type="text"]::placeholder { color: rgba(255,255,255,0.35); }
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a2540;
+}
 
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="text"]:focus {
-    border-color: #00a8a8;
-    background: rgba(0,168,168,0.08);
-    box-shadow: 0 0 0 3px rgba(0,168,168,0.15);
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 button {
-    width: 100%; padding: 14px;
-    background: linear-gradient(135deg, #00a8a8, #00c9a7);
-    color: white; border: none; border-radius: 12px;
-    font-size: 15px; font-weight: 600;
-    font-family: 'Outfit', sans-serif;
-    cursor: pointer; margin-top: 8px;
-    transition: all 0.25s ease;
-    box-shadow: 0 4px 20px rgba(0,168,168,0.35);
+    width: 100%;
+    padding: 11px;
+    background: #00a8a8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(0,168,168,0.5);
+    background: #008f8f;
 }
 
-p.footer-text {
-    text-align: center; margin-top: 20px;
-    font-size: 14px; color: rgba(255,255,255,0.45);
+p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
 }
 
-/* Label acts as the toggle link */
-p.footer-text label {
-    color: #00c9a7; font-weight: 600;
-    cursor: pointer; transition: color 0.2s;
+p label {
+    color: #00a8a8;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-p.footer-text label:hover { color: #2ecc71; }
+p label:hover {
+    color: #008f8f;
+}
